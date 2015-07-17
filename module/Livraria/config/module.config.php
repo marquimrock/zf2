@@ -20,7 +20,7 @@ return array(
                 'options' => array(
                     'route' => '/admin/[:controller[/:action]][/:id]',
                     'constraints' => array(
-                        'id'=> '[0-9]+'
+                        'id' => '[0-9]+'
                     )
                 ),
             ),
@@ -40,7 +40,7 @@ return array(
                     'route' => '/admin/auth',
                     'defaults' => array(
                         'action' => 'index',
-                        'controller'=>'livraria-admin/auth'
+                        'controller' => 'livraria-admin/auth'
                     ),
                 ),
             ),
@@ -50,7 +50,7 @@ return array(
                     'route' => '/admin/auth/logout',
                     'defaults' => array(
                         'action' => 'logout',
-                        'controller'=>'livraria-admin/auth'
+                        'controller' => 'livraria-admin/auth'
                     ),
                 ),
             ),
@@ -62,19 +62,14 @@ return array(
             'categorias' => 'LivrariaAdmin\Controller\CategoriasController',
             'livros' => 'LivrariaAdmin\Controller\LivrosController',
             'users' => 'LivrariaAdmin\Controller\UsersController',
-<<<<<<< HEAD
             'clientes' => 'LivrariaAdmin\Controller\ClientesController',
-=======
->>>>>>> cf3485d3df99ddaeb795af2e5074f341c3b8db69
             'livraria-admin/auth' => 'LivrariaAdmin\Controller\AuthController',
         ),
     ),
-    
     'module_layouts' => array(
-      'Livraria' => 'layout/layout',
-      'LivrariaAdmin' => 'layout/layout-admin'
+        'Livraria' => 'layout/layout',
+        'LivrariaAdmin' => 'layout/layout-admin'
     ),
-    
     'view_manager' => array(
         'display_not_found_reason' => true,
         'display_exceptions' => true,

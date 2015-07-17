@@ -11,7 +11,7 @@ class IndexController extends AbstractActionController {
 
         $em = $this->getServiceLocator()->get('Doctrine\ORM\EntityManager');
         $repo = $em->getRepository('Livraria\Entity\Categoria');
-        
+
         $categorias = $repo->findAll();
 
         /** Zend\DB
@@ -33,11 +33,6 @@ class IndexController extends AbstractActionController {
         $em->flush();
 
         $telefones = $user->getTelefones();
-
-<<<<<<< HEAD
-=======
-
->>>>>>> cf3485d3df99ddaeb795af2e5074f341c3b8db69
     }
 
 }
