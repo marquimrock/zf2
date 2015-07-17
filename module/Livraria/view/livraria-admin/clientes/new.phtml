@@ -1,0 +1,24 @@
+<h3>Novo Cliente</h3>
+
+<br />
+
+<?php
+$form = $this->form; 
+
+$form->setAttribute('action', $this->url('livraria-admin',array('controller'=>'clientes','action'=>'new')));
+
+$form->prepare();
+echo $this->form()->openTag($form);
+echo $this->formHidden($form->get('id'));
+echo $this->formRow($form->get('razao_social'))."<br>";
+echo $this->formRow($form->get('fantasia'))."<br>";
+echo $this->formRow($form->get('cnpj'))."<br>";
+echo $this->formRow($form->get('ie'))."<br>";
+echo $this->formRow($form->get('endereco'))."<br>";
+echo $this->formRow($form->get('bairro'))."<br>";
+echo $this->formRow($form->get('cidade'))."<br>";
+echo $this->formRow($form->get('telefone'))."<br>";
+echo $this->formRow($form->get('email'))."<br>";
+echo $this->formSubmit($form->get('submit'));
+echo $this->form()->closeTag();
+?>

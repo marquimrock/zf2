@@ -191,56 +191,23 @@ class User extends \Livraria\Entity\User implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function getNome()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNome', array());
-
-        return parent::getNome();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getEmail()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEmail', array());
-
-        return parent::getEmail();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPassword()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPassword', array());
-
-        return parent::getPassword();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getSalt()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSalt', array());
-
-        return parent::getSalt();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function setId($id)
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setId', array($id));
 
         return parent::setId($id);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getNome()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNome', array());
+
+        return parent::getNome();
     }
 
     /**
@@ -257,12 +224,34 @@ class User extends \Livraria\Entity\User implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
+    public function getEmail()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEmail', array());
+
+        return parent::getEmail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function setEmail($email)
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEmail', array($email));
 
         return parent::setEmail($email);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPassword()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPassword', array());
+
+        return parent::getPassword();
     }
 
     /**
@@ -279,12 +268,23 @@ class User extends \Livraria\Entity\User implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function setSalt($salt)
+    public function getSalt()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSalt', array($salt));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSalt', array());
 
-        return parent::setSalt($salt);
+        return parent::getSalt();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function encryptPassword($password)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'encryptPassword', array($password));
+
+        return parent::encryptPassword($password);
     }
 
     /**

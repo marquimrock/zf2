@@ -62,6 +62,7 @@ return array(
             'categorias' => 'LivrariaAdmin\Controller\CategoriasController',
             'livros' => 'LivrariaAdmin\Controller\LivrosController',
             'users' => 'LivrariaAdmin\Controller\UsersController',
+            'clientes' => 'LivrariaAdmin\Controller\ClientesController',
             'livraria-admin/auth' => 'LivrariaAdmin\Controller\AuthController',
         ),
     ),
