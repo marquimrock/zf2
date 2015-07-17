@@ -8,12 +8,21 @@ use Zend\Authentication\AuthenticationService,
 
 class UserIdentity extends AbstractHelper {
 
+<<<<<<< HEAD
 //    private $userService;
 //
 //    public function __construct($userService)
 //    {
 //       $this->userService = $userService;
 //    }
+=======
+    private $userService;
+
+    public function __construct($userService)
+    {
+        $this->userService = $userService;
+    }
+>>>>>>> cf3485d3df99ddaeb795af2e5074f341c3b8db69
 
     protected $authService;
 

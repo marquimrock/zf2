@@ -34,6 +34,10 @@ class IndexController extends AbstractActionController {
 
         $telefones = $user->getTelefones();
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> cf3485d3df99ddaeb795af2e5074f341c3b8db69
     }
 
 }
