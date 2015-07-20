@@ -11,6 +11,7 @@ use Livraria\Model\CategoriaTable;
 use Livraria\Service\Categoria as CategoriaService;
 use Livraria\Service\Livro as LivroService;
 use Livraria\Service\User as UserService;
+use Livraria\Service\Cliente as ClienteService;
 use LivrariaAdmin\Form\Livro as LivroFrm;
 use Livraria\Auth\Adapter as AuthAdapter;
 
@@ -77,6 +78,9 @@ class Module {
         },
                 'Livraria\Service\User' => function($service) {
             return new UserService($service->get('Doctrine\ORM\EntityManager'));
+        },
+                'Livraria\Service\Cliente' => function($service) {
+            return new ClienteService($service->get('Doctrine\ORM\EntityManager'));
         },
                 'LivrariaAdmin\Form\Livro' => function($service) {
             $em = $service->get('Doctrine\ORM\EntityManager');

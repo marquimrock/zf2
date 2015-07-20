@@ -172,7 +172,8 @@ class Cliente {
     }
 
     public function toArray() {
-        return array('id' => $this->getId(),
+        return array(
+            'id'           => $this->getId(),
             'razao_social' => $this->getRazao_social(),
             'fantasia'     => $this->getFantasia(),
             'cnpj'         => $this->getCnpj(),

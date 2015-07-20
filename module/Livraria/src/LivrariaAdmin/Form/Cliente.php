@@ -27,7 +27,7 @@ class Cliente extends Form {
             ),
             'attributes' => array(
                 'id' => 'razao_social',
-                'placeholder' => 'Rasão Social'
+                'placeholder' => 'Razão Social'
             )
         ));
         
